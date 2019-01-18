@@ -1,0 +1,20 @@
+/* :root{
+  --awesomeColor : #2980b9;
+}
+
+li:first-child a{
+  color: var(--awesomeColor);
+} */
+
+/* @custom-media --ipad-size (max-width:850px);
+
+@media (--ipad-size){
+   body{
+     background-color: red;
+   }
+} */
+
+
+h1 {
+  color: blue;
+}
