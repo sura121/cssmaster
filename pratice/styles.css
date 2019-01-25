@@ -74,12 +74,51 @@ li {
   font-size: 10px;
 }
 
-.grid__item:first-child .grid__span:nth-child(2){
+.grid__item__span .grid__span__end {
+  position: absolute;
   text-transform: uppercase;
   text-decoration: underline;
   margin-left: 5px;
   color: rgba(0, 0, 0, 0.4);
   font-size: 10px;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+.grid__item:first-child .grid__span:first-child{
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 10px;
+}
+
+.grid__item:nth-child(3) .grid__span:first-child {
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 10px;
+}
+
+.grid__item:nth-child(15) .grid__span:first-child {
+  position: absolute;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 10px;
+}
+
+.grid__item:nth-child(15) .grid__item__span:nth-child(2){
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.grid__item:nth-child(15) .form-control {
+  height: 30px;
 }
 
 .grid {
@@ -119,3 +158,39 @@ li {
   background-color: var(--colorFive);
 }
 
+.grid .grid__item:nth-child(8){
+  grid-area: span 2 / span 2;
+  background-color: var(--colorSix);
+}
+
+.grid .grid__item:nth-child(9){
+  height: 90%;
+  grid-row: span 2;
+  background-image: url(https://i.pinimg.com/564x/62/e3/fa/62e3faa2f272dc30aa6cdd6c3f3b8997.jpg);
+}
+
+.grid .grid__item:nth-child(10){
+  grid-area: span 2 / span 2;
+  background-image: url(https://i.pinimg.com/564x/06/63/44/066344692e404e0386fdcf6ab3cfd161.jpg);
+}
+
+.grid .grid__item:nth-child(11){
+  background-image: url(https://i.pinimg.com/564x/06/63/44/066344692e404e0386fdcf6ab3cfd161.jpg);
+}
+
+.grid .grid__item:nth-child(12){
+  background-image: url(https://i.pinimg.com/564x/06/63/44/066344692e404e0386fdcf6ab3cfd161.jpg);
+}
+
+.grid .grid__item:nth-child(13){
+  grid-area: span 2 / span 2;
+  background-color: var(--colorOne);
+}
+
+.grid .grid__item:nth-child(14){
+  background-image: url(https://i.pinimg.com/564x/bd/b1/ff/bdb1ffe970a3d3d9755d7181d99f1c83.jpg);
+}
+
+.grid .grid__item:nth-child(15){
+  background-color: var(--colorFive);
+}
